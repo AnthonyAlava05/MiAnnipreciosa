@@ -16,8 +16,8 @@ header {
 }
 
 img {
-    max-width: 80%;
-    height: auto;
+    width: 200px;
+    height: 320px;
     opacity: 0; /* Ocultar al principio */
     transform: translateY(-100vh); /* Colocar fuera de la pantalla */
     border-radius: 10px;
