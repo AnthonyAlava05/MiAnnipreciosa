@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    opacity: 0;
+    transform: translateY(-100vh);
+}
+
+/* Estilo especial para la página de dedicatoria */
+.dedicatoria-body {
+    background-color: #faf0e6; /* Color suave, estilo carta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dedicatoria {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    color: #333;
+    font-size: 20px;
+    line-height: 1.6;
+    border: 2px solid #e0c097;
+}
+
+.dedicatoria p {
+    margin: 0;
+}
+
+/* Botones para redirigir */
+.dedicatoria-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b5651d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b4513;
+}
+
+/* Animaciones */
+@keyframes caer {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animar-imagen {
+    animation: caer 1s ease-out forwards;
+}

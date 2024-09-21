@@ -1,0 +1,101 @@
+/* Estilos básicos */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #faf0e6; /* Color de fondo suave */
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+}
+
+img {
+    max-width: 80%;
+    height: auto;
+    opacity: 0; /* Ocultar al principio */
+    transform: translateY(-100vh); /* Colocar fuera de la pantalla */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la contenedora de los botones */
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #b5651d; /* Color marrón elegante */
+    color: white;
+    opacity: 0; /* Ocultar al principio */
+    position: relative;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #8b4513; /* Color más oscuro al hacer hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animaciones */
+@keyframes caer {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes deslizar-izquierda {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes deslizar-derecha {
+    0% {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Clases animadas */
+.animar-imagen {
+    animation: caer 1s ease-out forwards;
+}
+
+.animar-boton-izquierda {
+    animation: deslizar-izquierda 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.animar-boton-derecha {
+    animation: deslizar-derecha 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
