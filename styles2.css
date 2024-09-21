@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 body {
     margin: 0;
     padding: 0;
@@ -22,9 +22,9 @@ img {
     transform: translateY(-100vh);
 }
 
-/* Estilo especial para la página de dedicatoria */
+
 .dedicatoria-body {
-    background-color: #faf0e6; /* Color suave, estilo carta */
+    background-color: #faf0e6; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +50,7 @@ img {
     margin: 0;
 }
 
-/* Botones para redirigir */
+
 .dedicatoria-buttons {
     margin-top: 30px;
     display: flex;
@@ -73,7 +73,7 @@ button:hover {
     background-color: #8b4513;
 }
 
-/* Animaciones */
+
 @keyframes caer {
     0% {
         opacity: 0;

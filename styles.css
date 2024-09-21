@@ -1,4 +1,4 @@
-/* Estilos básicos */
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Georgia', serif;
-    background-color: #faf0e6; /* Color de fondo suave */
+    background-color: #faf0e6; 
     overflow: hidden;
 }
 
@@ -18,13 +18,12 @@ header {
 img {
     width: 200px;
     height: 320px;
-    opacity: 0; /* Ocultar al principio */
-    transform: translateY(-100vh); /* Colocar fuera de la pantalla */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    opacity: 0; 
+    transform: translateY(-100vh); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo para la contenedora de los botones */
+
 .button-container {
     margin-top: 30px;
     display: flex;
@@ -39,19 +38,19 @@ button {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #b5651d; /* Color marrón elegante */
+    background-color: #b5651d; 
     color: white;
-    opacity: 0; /* Ocultar al principio */
+    opacity: 0; 
     position: relative;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: #8b4513; /* Color más oscuro al hacer hover */
+    background-color: #8b4513; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Animaciones */
+
 @keyframes caer {
     0% {
         opacity: 0;
@@ -85,7 +84,7 @@ button:hover {
     }
 }
 
-/* Clases animadas */
+
 .animar-imagen {
     animation: caer 1s ease-out forwards;
 }
